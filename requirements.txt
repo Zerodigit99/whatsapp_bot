@@ -1,4 +1,5 @@
-Flask==2.1.2
+Flask==2.0.3  # Use a stable version that works with older Werkzeug
+Werkzeug==2.0.3  # Compatible version for Flask 2.0.x
 twilio==7.9.0
 gunicorn==20.1.0
-python-dotenv==0.20.0  # Optional if you want to load .env files
+python-dotenv==0.20.0  # Optional, for loading .env files

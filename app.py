@@ -7,8 +7,8 @@ from twilio.rest import Client
 app = Flask(__name__)
 
 # Twilio API Credentials (Replace with your own or store in environment variables)
-account_sid = os.getenv("TWILIO_ACCOUNT_SID")
-auth_token = os.getenv("TWILIO_AUTH_TOKEN")
+account_sid = os.getenv("ACcbb301918a6f0315caf56aad6458232d")
+auth_token = os.getenv("e54964d787c40881b7dde52dc8cb5e1f")
 client = Client(account_sid, auth_token)
 
 # List of admin phone numbers (replace with your admin number in E.164 format)
@@ -43,6 +43,4 @@ def whatsapp():
     return str(resp)
 
 if __name__ == '__main__':
-    app.run(debug=True)
-    
-
+    app.run(debug=False, use_reloader=False)  # Updated line
